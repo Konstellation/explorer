@@ -1,0 +1,52 @@
+{
+  "name": "hashgard-explore",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.8.1",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/vue-fontawesome": "^0.1.8",
+    "axios": "^0.18.0",
+    "bech32": "^1.1.3",
+    "big.js": "^5.2.2",
+    "bip32": "^1.0.2",
+    "bip39": "^2.5.0",
+    "bitcoinjs-lib": "^5.1.6",
+    "chart.js": "^2.9.3",
+    "cosmosjs": "file:../cosmosjs",
+    "crypto-js": "^3.1.9-1",
+    "dayjs": "^1.8.13",
+    "element-ui": "^2.4.11",
+    "lodash": "^4.17.11",
+    "numeral": "^2.0.6",
+    "ripemd160": "latest",
+    "scrypt.js": "^0.3.0",
+    "secp256k1": "^3.7.1",
+    "sha256": "^0.2.0",
+    "uuid": "latest",
+    "vue": "^2.5.17",
+    "vue-i18n": "^8.15.6",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "web3-utils": "^1.0.0-beta.52"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

@@ -1,0 +1,286 @@
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: $color-link;
+  text-decoration: none;
+}
+
+.number.active {
+  background: $color-subtitle;
+  border: 1px solid $color-subtitle;
+}
+
+.el-select-dropdown {
+  border: 0;
+  border-radius: 0;
+  background: $color-primary;
+  color: $color-text;
+}
+
+.el-select-dropdown__item {
+  border-bottom: 1px solid $color-line-border;
+  background: $color-primary;
+  color: $color-text;
+
+  &:hover, &.hover {
+    background: $color-hover;
+    color: $color-title;
+  }
+
+  &.selected {
+    color: $color-active;
+  }
+}
+
+.el-dialog {
+  background: $color-secondary;
+  width: 60%;
+
+  @include responsive($xxs) {
+    width: 92%;
+  }
+
+  &__title {
+    color: $color-title;
+  }
+}
+
+.el-input {
+  border-bottom: 1px solid $color-active;
+  border-radius: 0;
+  height: 38px;
+}
+
+.el-dropdown-menu {
+  background: $color-secondary;
+  border: 0 none;
+  border-radius: 0;
+
+  &__item {
+    color: $color-title;
+    background: $color-primary;
+
+    &:hover {
+      color: $color-title !important;
+      background: $color-hover !important;
+    }
+  }
+}
+
+.el-input__inner {
+  background: $color-secondary;
+  border: 0;
+  height: 37px;
+}
+
+.el-button--default {
+  background: $color-active;
+  color: $color-title;
+  border: 0;
+  border-radius: 0;
+
+  &:hover {
+    background: $color-active;
+  }
+
+  &:focus {
+    background: $color-active;
+  }
+}
+
+
+.search-container {
+  .el-input__inner {
+    background: transparent;
+    border: none;
+    height: 48px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.select-net.el-select {
+  .el-input__inner {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .el-input__inner:focus,
+  .el-input.is-focus .el-input__inner {
+    border-color: white;
+  }
+}
+
+.el-table__empty-block {
+  background-color: $color-primary;
+}
+
+.el-table th {
+  height: 54px;
+  background-color: $color-primary;
+  color: white;
+}
+
+.el-table tr {
+  background-color: $color-primary;
+  color: $color-text;
+}
+
+.el-table td {
+  border-bottom: 1px solid $color-line-border;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: $color-hover;
+}
+
+.el-pagination button,
+.el-pagination span:not([class*='suffix']) {
+  height: 32px;
+  line-height: 32px;
+}
+
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+  min-width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background: $color-line-border !important;
+  border: 1px solid $color-line-border !important;
+  border-radius: 0 !important;
+  color: $color-text !important;
+
+  &:hover {
+    background-color: $color-hover !important;
+  }
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background: $color-accent !important;
+  border: 1px solid $color-accent !important;
+  border-radius: 0 !important;
+}
+
+.el-menu--horizontal .el-menu .el-menu-item,
+.el-menu--horizontal .el-menu .el-submenu__title {
+  height: 52px;
+  padding: 8px;
+}
+
+.el-pagination .btn-prev:disabled, .btn-next:disabled {
+  background: $color-primary !important;
+  border: 1px solid $color-primary !important;
+  border-radius: 0 !important;
+  color: $color-primary !important;
+}
+
+.el-autocomplete-suggestion {
+  border-radius: 0;
+  border: 1px solid black;
+}
+
+.el-autocomplete-suggestion__wrap .el-scrollbar__wrap {
+  background: black;
+}
+
+.item-details {
+  background: $color-primary;
+  //padding: 16px;
+  //margin: 0 0 16px 0;
+
+  &__section {
+    margin: 0 0 15px 0;
+
+    &__title {
+
+    }
+
+    &__content {
+      border-top: 1px solid $color-line;
+      padding: 10px 0;
+    }
+  }
+
+  &__label {
+    font-size: 12px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    @include responsive($xxs) {
+      flex-direction: column;
+    }
+
+    &__short {
+      justify-content: start !important;
+    }
+  }
+
+  &__tables * {
+    flex-basis: 50%;
+  }
+
+  &__data {
+    margin: 0 0 10px 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__value {
+
+  }
+
+  &__btns {
+    .el-button {
+      background-color: transparent;
+      color: $color-title;
+      border: 0;
+      border-radius: 0;
+
+      &:hover {
+        background: $color-hover;
+      }
+
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.error {
+  background: $color-error;
+  color: $color-title;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  /*min-height: 100px;*/
+  justify-content: center;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  min-height: 500px;
+  font-size: 34px;
+  color: $color-active;
+}
+
+.danger {
+  color: $color-error;
+  font-size: 12px;
+}
+
+.success {
+  color: $color-success;
+  font-size: 12px;
+}
