@@ -1,6 +1,6 @@
 {
   "name": "hashgard-explore",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -19,7 +19,7 @@
     "bip39": "^2.5.0",
     "bitcoinjs-lib": "^5.1.6",
     "chart.js": "^2.9.3",
-    "cosmosjs": "file:../cosmosjs",
+    "@konstellation/cosmosjs": "^1.0.9",
     "crypto-js": "^3.1.9-1",
     "dayjs": "^1.8.13",
     "element-ui": "^2.4.11",
